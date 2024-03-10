@@ -2,7 +2,8 @@
   "packs": [
     "TutouAlbum.json",
     "Kuma_Stickers11.json",
-    "addtutou.json"
+    "addtutou.json",
+    "Akemi_Homura.json"
   ],
   "homeserver_url": "https://matrix.org"
 }
