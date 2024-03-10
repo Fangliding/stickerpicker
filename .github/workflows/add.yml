@@ -1,0 +1,31 @@
+name: Add stickers
+
+on:
+  workflow_dispatch:
+    inputs:
+      STICKER_LINK:
+        description: 'Telegram贴纸包链接'
+        required: true
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: add
+      env:
+       BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+       MATRIX_TOKEN: ${{ secrets.MATRIX_TOKEN }}
+      run: |
+       pip install .
+       echo $MATRIX_TOKEN >> config.json
+       echo $BOT_TOKEN | sticker-import ${{ github.event.inputs.STICKER_LINK }}
+       git add web/packs
+       git config user.name github-actions
+       git config user.email github-actions@github.com
+       git commit -m "add"
+       git push        
