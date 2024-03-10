@@ -1,6 +1,7 @@
 {
   "packs": [
-    "TutouAlbum.json"
+    "TutouAlbum.json",
+    "Kuma_Stickers11.json"
   ],
   "homeserver_url": "https://matrix.org"
 }
