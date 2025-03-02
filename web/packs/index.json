@@ -1,0 +1,18 @@
+{
+  "packs": [
+    "TutouAlbum.json",
+    "Kuma_Stickers11.json",
+    "addtutou.json",
+    "Akemi_Homura.json",
+    "No_Anime.json",
+    "yjsnpis.json",
+    "pcr_meme_by_favorite_stickers_bot.json",
+    "StandWithTouhou.json",
+    "thddbxc.json",
+    "LINE_Light_Blue_Girl.json",
+    "Tachibana_Kanade.json",
+    "KawaiiChino.json",
+    "chino_kawaii6_by_fStikBot.json"
+  ],
+  "homeserver_url": "https://matrix.org"
+}
